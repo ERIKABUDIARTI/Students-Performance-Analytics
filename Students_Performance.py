@@ -56,6 +56,7 @@ data = {}
 # Convert user input dictionary to DataFrame
 user_input_df = pd.DataFrame(data, index=[0])
 
+st.markdown("### 📋 Student Information")
 col1, col2, col3 = st.columns(3)
 with col1:
     encoder_Tuition_fees_up_to_date = LabelEncoder()
@@ -90,6 +91,7 @@ with col6:
     Gender = st.selectbox(label='Gender', options=['Female', 'Male'], index=1)
     data['Gender'] = [encoder_Gender.transform([Gender])[0]]
 
+st.markdown("### 📊 Academic Scores")
 col7, col8 = st.columns(2)
 with col7:
     Admission_grade = st.slider(label='Admission Grade', min_value=0, max_value=200, value=100)
