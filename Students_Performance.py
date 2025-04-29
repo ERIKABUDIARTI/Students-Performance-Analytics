@@ -139,9 +139,10 @@ with st.expander("Raw Dataset"):
 # Preprocess data and make prediction on button click
 if st.button('Click Here to Predict'):
     new_data = data_preprocessing(data=data)
-    with st.spinner('Predicting...'):
+    with st.markdown("## 🎯 Prediction Result"):
         time.sleep(2)  # Simulating prediction process
         output = prediction(new_data)
         st.success(f"Prediction: {output}")
 
+st.toast("Prediction completed!")
 st.snow()
