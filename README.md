@@ -57,13 +57,52 @@ Untuk mengatasi permasalahan *dropout* siswa dalam pendidikannya, akan digunakan
 
 ## **Persiapan**
 
-Sumber data: 
-UCI Machine Learning Repository https://doi.org/10.24432/C5MC89
+Sumber data pelatihan: 
+UCI Machine Learning Repository 
+```
+https://doi.org/10.24432/C5MC89
+```
 
-*Setup environment*:
+*Setup environment - Anaconda*:
 ```
-pip install numpy pandas matplotlib seaborn scikit-learn==1.6.1 joblib==1.4.2 streamlit==1.34.0
+conda create --name stud-perfom python=3.11.12
+conda activate stud-perfom
+pip install -r requirements.txt
 ```
+
+*Setup environment - Shell/Terminal*:
+```
+mkdir stud-perfom
+cd stud-perfom
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+
+Proyek *Students Performance Analytics* ini menggunakan model **Logistic Regression** untuk memprediksi *Graduation Rate* berdasarkan data siswa. Berkas yang digunakan adalah sebagai berikut: 
+  - `logistic_regression_best_model.joblib` : Model *Logistic Regression* yang sudah dilatih.
+  - `prediction.py` : *Script* Python untuk menjalankan proses prediksi.
+
+
+Cara menjalankan prediksi:
+  1. Persiapan *Environment*
+
+     - Pastikan Anda sudah berada di *environment* Python yang sesuai. Anda bisa menggunakan `pipenv` atau `conda`
+     - *Install* dependensi yang ada pada `requirements.txt`
+  
+  2. Format Input Data
+     - Script `prediction.py` membutuhkan *input* data dalam format CSV dengan struktur kolom yang sesuai dengan data pelatihan `student.csv`
+  
+  3. Menjalankan Prediksi
+     
+     - Gunakan perintah berikut di terminal untuk menjalankan prediksi:
+       
+      ```
+      python prediction.py --input data.csv --output prediksi.csv
+      ```
+
+  4. Mendapatkan Hasil Prediksi
+     - Hasil prediksi akan disimpan dalam berkas `prediksi.csv` dengan tambahan kolom `prediction` yang berisi *output* dari model.
 
 
 ## ***Business Dashboard***
