@@ -97,10 +97,10 @@ with col6:
 
 col7, col8 = st.columns(2)
 with col7:
-    Admission_grade = st.slider(label='Admission Grade', 0, 200, 100)
+    Admission_grade = st.slider(label='Admission Grade', min_value=0, max_value=200, value=100)
     data['Admission_grade'] = [Admission_grade]
 with col8:
-    Previous_qualification_grade = st.slider(label='Previous Qualification Grade', 0, 200, 100)
+    Previous_qualification_grade = st.slider(label='Previous Qualification Grade', min_value=0, max_value=200, value=100)
     data['Previous_qualification_grade'] = [Previous_qualification_grade]
 
 st.markdown("#### 📚 1st Semester")
