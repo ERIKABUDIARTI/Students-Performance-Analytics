@@ -29,6 +29,7 @@ Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan berciri k
 
 Jumlah *dropout* yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan *dropout* sehingga dapat diberi bimbingan khusus.
 
+
 ## **Cakupan Proyek**
 
 Untuk mengatasi permasalahan *dropout* siswa dalam pendidikannya, akan digunakan pendekatan dan metode/teknik berikut:
@@ -53,6 +54,7 @@ Untuk mengatasi permasalahan *dropout* siswa dalam pendidikannya, akan digunakan
 ### *Deployment*
 - Menjalankan model *Logistic Regression* yang telah dibuat ke dalam lingkup produksi sehingga *user* dapat berinteraksi dengan model.
 
+
 ## **Persiapan**
 
 Sumber data: 
@@ -62,14 +64,27 @@ UCI Machine Learning Repository https://doi.org/10.24432/C5MC89
 ```
 pip install numpy pandas matplotlib seaborn scikit-learn==1.4.1 joblib==1.3.2 streamlit==1.27.0
 ```
+
+
 ## ***Business Dashboard***
 
 *Dashboard* dibuat dengan menggunakan *Google Looker Studio* untuk menampilkan distribusi data dan pengaruh variabel-variabel data terhadap *Student Performance*. *Dashboard* dapat diakses pada *link* berikut ini:
 ```
 https://lookerstudio.google.com/reporting/6f1ee678-dc05-4167-9fbd-7521390e018d
 ```
-
 ![erika_budiarti-dashboard](https://raw.githubusercontent.com/ERIKABUDIARTI/Students-Performance-Analytics/main/erika_budiarti-dashboard.png)
+
+
+## **Menjalankan Sistem *Machine Learning***
+
+*Prototype* Sistem *Machine Learning* ini dibuat dengan *Streamlit* yang dapat diakses pada *link* berikut ini:
+```
+https://students-performs.streamlit.app/
+```
+![erika_budiarti-streamlit](https://raw.githubusercontent.com/ERIKABUDIARTI/Students-Performance-Analytics/main/erika_budiarti-streamlit.png)
+
+Input data mahasiswa pada form yang tersedia, seperti *Tuition Fees*, *Scholarship Holder*, *Debtor Status*, *Gender*, *Attendance*, *Admission Grade*, dan seterusnya. Kemudian *click* tombol *Click Here to Predict* untuk menjalankan model dan mendapatkan hasil prediksi. 
+
 
 ## ***Conclusion***
 
