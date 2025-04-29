@@ -1,7 +1,7 @@
 #prediction.py
 import joblib
 
-model = joblib.load("model/logistic_regression_model.joblib")
+model = joblib.load("model/logistic_regression_best_model.joblib")
 result_target = joblib.load("model/encoder_target.joblib")
 
 def prediction(data):
