@@ -101,31 +101,31 @@ with col8:
 st.markdown("#### 📚 Curricular Units 1st Semester")
 col9, col10, col11, col12 = st.columns(4)
 with col9:
-    Curricular_units_1st_sem_approved = st.number_input(label='Approved', value=5)
+    Curricular_units_1st_sem_approved = st.number_input(label='1st Sem Approved', value=5)
     data['Curricular_units_1st_sem_approved'] = [Curricular_units_1st_sem_approved]
 with col10:
-    Curricular_units_1st_sem_grade = st.number_input(label='Grade', value=12)
+    Curricular_units_1st_sem_grade = st.number_input(label='1st Sem Grade', value=12)
     data['Curricular_units_1st_sem_grade'] = [Curricular_units_1st_sem_grade]
 with col11:
-    Curricular_units_1st_sem_enrolled = st.number_input(label='Enrolled', value=6)
+    Curricular_units_1st_sem_enrolled = st.number_input(label='1st Sem Enrolled', value=6)
     data['Curricular_units_1st_sem_enrolled'] = [Curricular_units_1st_sem_enrolled]
 with col12:
-    Curricular_units_1st_sem_credited = st.number_input(label='Credited', value=0)
+    Curricular_units_1st_sem_credited = st.number_input(label='1st Sem Credited', value=0)
     data['Curricular_units_1st_sem_credited'] = [Curricular_units_1st_sem_credited]
 
 st.markdown("#### 📚 Curricular Units 2nd Semester")
 col13, col14, col15, col16 = st.columns(4)
 with col13:
-    Curricular_units_2nd_sem_approved = st.number_input(label='Approved', value=5)
+    Curricular_units_2nd_sem_approved = st.number_input(label='2nd Sem Approved', value=5)
     data['Curricular_units_2nd_sem_approved'] = [Curricular_units_2nd_sem_approved]
 with col14:
-    Curricular_units_2nd_sem_grade = st.number_input(label='Grade', value=12)
+    Curricular_units_2nd_sem_grade = st.number_input(label='2nd Sem Grade', value=12)
     data['Curricular_units_2nd_sem_grade'] = [Curricular_units_2nd_sem_grade]
 with col15:
-    Curricular_units_2nd_sem_enrolled = st.number_input(label='Enrolled', value=6)
+    Curricular_units_2nd_sem_enrolled = st.number_input(label='2nd Sem Enrolled', value=6)
     data['Curricular_units_2nd_sem_enrolled'] = [Curricular_units_2nd_sem_enrolled]
 with col16:
-    Curricular_units_2nd_sem_credited = st.number_input(label='Credited', value=0)
+    Curricular_units_2nd_sem_credited = st.number_input(label='2nd Sem Credited', value=0)
     data['Curricular_units_2nd_sem_credited'] = [Curricular_units_2nd_sem_credited]
 
 # Convert user input dictionary to DataFrame
