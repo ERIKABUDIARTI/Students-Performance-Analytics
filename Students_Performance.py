@@ -72,11 +72,6 @@ with col3:
     encoder_Debtor.fit(['Non Debtor', 'Debtor'])
     Debtor = st.selectbox(label='Debtor', options=['Non Debtor', 'Debtor'], index=1)
     data['Debtor'] = [encoder_Debtor.transform([Debtor])[0]]
-with col4:
-    encoder_Displaced = LabelEncoder()
-    encoder_Displaced.fit(['Non Displaced', 'Displaced'])
-    Displaced = st.selectbox(label='Displaced', options=['Non Displaced', 'Displaced'], index=0)
-    data['Displaced'] = [encoder_Displaced.transform([Displaced])[0]]
     
 col4, col5, col6 = st.columns(3)
 with col4:
