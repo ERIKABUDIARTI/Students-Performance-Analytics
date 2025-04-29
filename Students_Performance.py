@@ -143,6 +143,6 @@ if st.button('Click Here to Predict'):
         time.sleep(2)  # Simulating prediction process
         output = prediction(new_data)
         st.success(f"## 🎯 Prediction Result: {output}")
+        st.toast("Prediction completed!")
 
-st.toast("Prediction completed!")
 st.snow()
