@@ -120,7 +120,7 @@ https://lookerstudio.google.com/reporting/6f1ee678-dc05-4167-9fbd-7521390e018d
 ```
 https://students-performs.streamlit.app/
 ```
-![erika_budiarti-streamlit](https://raw.githubusercontent.com/ERIKABUDIARTI/Students-Performance-Analytics/main/erika_budiarti-streamlit.png)
+
 
 Cara menjalankan Aplikasinya adalah sebagai berikut
 1. Isi *form* sesuai data mahasiswa, seperti *Tuition Fees*, *Scholarship Holder*, *Gender*, *Attendance*, dan seterusnya
