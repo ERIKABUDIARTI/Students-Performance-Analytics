@@ -56,7 +56,7 @@ data = {}
 # Convert user input dictionary to DataFrame
 user_input_df = pd.DataFrame(data, index=[0])
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 with col1:
     encoder_Tuition_fees_up_to_date = LabelEncoder()
     encoder_Tuition_fees_up_to_date.fit(['Not Update', 'Update'])
@@ -78,7 +78,12 @@ with col4:
     Displaced = st.selectbox(label='Displaced', options=['Non Displaced', 'Displaced'], index=0)
     data['Displaced'] = [encoder_Displaced.transform([Displaced])[0]]
     
-col5, col6, col7, col8 = st.columns(4)
+col4, col5, col6 = st.columns(3)
+with col4:
+    encoder_Displaced = LabelEncoder()
+    encoder_Displaced.fit(['Non Displaced', 'Displaced'])
+    Displaced = st.selectbox(label='Displaced', options=['Non Displaced', 'Displaced'], index=0)
+    data['Displaced'] = [encoder_Displaced.transform([Displaced])[0]]
 with col5:
     encoder_Daytime_evening_attendance = LabelEncoder()
     encoder_Daytime_evening_attendance.fit(['Daytime', 'Evening'])
@@ -89,39 +94,43 @@ with col6:
     encoder_Gender.fit(['Female', 'Male'])
     Gender = st.selectbox(label='Gender', options=['Female', 'Male'], index=1)
     data['Gender'] = [encoder_Gender.transform([Gender])[0]]
+
+col7, col8 = st.columns(2)
 with col7:
-    Admission_grade = st.number_input(label='Admission Grade', value=100)
+    Admission_grade = st.slider(label='Admission Grade', 0, 200, 100)
     data['Admission_grade'] = [Admission_grade]
 with col8:
-    Previous_qualification_grade = st.number_input(label='Previous Qualification Grade', value=100)
+    Previous_qualification_grade = st.slider(label='Previous Qualification Grade', 0, 200, 100)
     data['Previous_qualification_grade'] = [Previous_qualification_grade]
 
+st.markdown("#### 📚 1st Semester")
 col9, col10, col11, col12 = st.columns(4)
 with col9:
-    Curricular_units_1st_sem_approved = st.number_input(label='Curricular Units 1st Semester Approved', value=5)
+    Curricular_units_1st_sem_approved = st.number_input(label='1st Sem Approved', value=5)
     data['Curricular_units_1st_sem_approved'] = [Curricular_units_1st_sem_approved]
 with col10:
-    Curricular_units_1st_sem_grade = st.number_input(label='Curricular Units 1st Semester Grade', value=12)
+    Curricular_units_1st_sem_grade = st.number_input(label='1st Sem Grade', value=12)
     data['Curricular_units_1st_sem_grade'] = [Curricular_units_1st_sem_grade]
 with col11:
-    Curricular_units_1st_sem_enrolled = st.number_input(label='Curricular Units 1st Semester Enrolled', value=6)
+    Curricular_units_1st_sem_enrolled = st.number_input(label='1st Semester Enrolled', value=6)
     data['Curricular_units_1st_sem_enrolled'] = [Curricular_units_1st_sem_enrolled]
 with col12:
-    Curricular_units_1st_sem_credited = st.number_input(label='Curricular Units 1st Semester Credited', value=0)
+    Curricular_units_1st_sem_credited = st.number_input(label='1st Semester Credited', value=0)
     data['Curricular_units_1st_sem_credited'] = [Curricular_units_1st_sem_credited]
-    
+
+st.markdown("#### 📚 2nd Semester")
 col13, col14, col15, col16 = st.columns(4)
 with col13:
-    Curricular_units_2nd_sem_approved = st.number_input(label='Curricular Units 2nd Semester Approved', value=5)
+    Curricular_units_2nd_sem_approved = st.number_input(label='2nd Semester Approved', value=5)
     data['Curricular_units_2nd_sem_approved'] = [Curricular_units_2nd_sem_approved]
 with col14:
-    Curricular_units_2nd_sem_grade = st.number_input(label='Curricular Units 2nd Semester Grade', value=12)
+    Curricular_units_2nd_sem_grade = st.number_input(label='2nd Semester Grade', value=12)
     data['Curricular_units_2nd_sem_grade'] = [Curricular_units_2nd_sem_grade]
 with col15:
-    Curricular_units_2nd_sem_enrolled = st.number_input(label='Curricular Units 2nd Semester Enrolled', value=6)
+    Curricular_units_2nd_sem_enrolled = st.number_input(label='2nd Semester Enrolled', value=6)
     data['Curricular_units_2nd_sem_enrolled'] = [Curricular_units_2nd_sem_enrolled]
 with col16:
-    Curricular_units_2nd_sem_credited = st.number_input(label='Curricular Units 2nd Semester Credited', value=0)
+    Curricular_units_2nd_sem_credited = st.number_input(label='2nd Semester Credited', value=0)
     data['Curricular_units_2nd_sem_credited'] = [Curricular_units_2nd_sem_credited]
 
 # Convert user input dictionary to DataFrame
