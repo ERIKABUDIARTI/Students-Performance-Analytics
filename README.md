@@ -62,7 +62,7 @@ UCI Machine Learning Repository https://doi.org/10.24432/C5MC89
 
 *Setup environment*:
 ```
-pip install numpy pandas matplotlib seaborn scikit-learn==1.4.1 joblib==1.3.2 streamlit==1.27.0
+pip install numpy pandas matplotlib seaborn scikit-learn==1.6.1 joblib==1.4.2 streamlit==1.34.0
 ```
 
 
