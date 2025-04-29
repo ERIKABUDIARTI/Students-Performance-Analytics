@@ -84,27 +84,6 @@ Proyek *Students Performance Analytics* ini menggunakan model **Logistic Regress
   - `prediction.py` : *Script* Python untuk menjalankan proses prediksi.
 
 
-Cara menjalankan prediksi:
-  1. Persiapan *Environment*
-
-     - Pastikan Anda sudah berada di *environment* Python yang sesuai. Anda bisa menggunakan `pipenv` atau `conda`
-     - *Install* dependensi yang ada pada `requirements.txt`
-  
-  2. Format Input Data
-     - Script `prediction.py` membutuhkan *input* data dalam format CSV dengan struktur kolom yang sesuai dengan data pelatihan `student.csv`
-  
-  3. Menjalankan Prediksi
-     
-     - Gunakan perintah berikut di terminal untuk menjalankan prediksi:
-       
-      ```
-      python prediction.py --input data.csv --output prediksi.csv
-      ```
-
-  4. Mendapatkan Hasil Prediksi
-     - Hasil prediksi akan disimpan dalam berkas `prediksi.csv` dengan tambahan kolom `prediction` yang berisi *output* dari model.
-
-
 ## ***Business Dashboard***
 
 *Dashboard* dibuat dengan menggunakan *Google Looker Studio* untuk menampilkan distribusi data dan pengaruh variabel-variabel data terhadap *Student Performance*. *Dashboard* dapat diakses pada *link* berikut ini:
