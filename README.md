@@ -84,7 +84,7 @@ https://students-performs.streamlit.app/
 ![erika_budiarti-streamlit](https://raw.githubusercontent.com/ERIKABUDIARTI/Students-Performance-Analytics/main/erika_budiarti-streamlit.png)
 
 Cara menjalankan Aplikasinya adalah sebagai berikut
-1. Isi form sesuai data mahasiswa, seperti *Tuition Fees*, *Scholarship Holder*, *Gender*, *Attendance*, dan seterusnya
+1. Isi *form* sesuai data mahasiswa, seperti *Tuition Fees*, *Scholarship Holder*, *Gender*, *Attendance*, dan seterusnya
 2. Klik tombol *Click Here to Predict*
 3. Hasil prediksi akan muncul di bawahnya (*Graduate* / *Not Graduate*). 
 
