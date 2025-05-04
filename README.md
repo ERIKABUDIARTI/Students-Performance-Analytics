@@ -104,7 +104,7 @@ https://students-performs.streamlit.app/
 Cara menjalankan Aplikasinya adalah sebagai berikut
 1. Isi *form* sesuai data mahasiswa, seperti *Tuition Fees*, *Scholarship Holder*, *Gender*, *Attendance*, dan seterusnya
 2. Klik tombol *Click Here to Predict*
-3. Hasil prediksi akan muncul di bawahnya (*Graduate* / *Not Graduate*). 
+3. Hasil prediksi akan muncul di bawahnya (*Graduate* / *Drop Out*). 
 
 
 ## ***Conclusion***
